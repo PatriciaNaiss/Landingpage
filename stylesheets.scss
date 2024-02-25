@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+}
+
+$orangeColor: #F7806C;
+$yellowColor: #FFF7BB;
+$whiteColor: #FFFFFF;
+$brownColor: #803F20;
+$fontCabinSketch: "Cabin Sketch";
+html {
+  font-size: 62.5%;
+  background-color: $whiteColor;
+}
+a {
+  text-decoration: none;
+}
+.backImg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body {
+  position: relative;
+  background-image: linear-gradient(120deg, $yellowColor, $whiteColor);
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 1200px;
+}
+.homeHeader {
+  background-image: url("Bilder/Home.png");
+  @extend .backImg;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    height: 10%;
+  }
+}
+.home {
+  margin-left: -20%;
+}
+h1 {
+  font-family: $fontCabinSketch;
+  font-size: 7rem;
+  color: $orangeColor;
+  margin-bottom: -30px;
+}
+h2 {
+  font-family: "pompiere", sans-serif;
+  color: $yellowColor;
+  font-size: 10rem;
+  font-weight: 400;
+  margin: 0;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 100px;
+  height: auto;
+  section  {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    img {
+      width: 100%;
+    }
+    div {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      width: 100%;
+      bottom: 0px;
+      padding: 5px 10px;
+      background: $yellowColor;
+      opacity: 0.7;
+      }
+     h4 {
+      color: $brownColor;
+      font-weight: 400;
+      font-size: 2.5rem;
+      text-tranform: uppercase;
+      }
+    }
+  article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 5%;
+    width: 40%;
+    h3{
+      font-size: 5.5rem;
+      color: $orangeColor;
+      font-weight: 500;
+      margin-top: -10px;
+      margin-bottom: 10px;
+      }
+    a {
+      background: $orangeColor;
+      margin-top: 20px;
+      padding: 5px 40px 5px 20px;
+      color: $yellowColor;
+      font-family: $fontCabinSketch;
+      font-size: 2.9rem;
+      display: flex;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+      img {
+        width: 25px;
+        margin: 0px 15px;
+        }
+      }
+    }
+    aside {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: auto;
+    h2{
+      display: flex;
+      align-content: center;
+      color: black;
+      font-size: 2.5rem;
+      padding-top: 150px;
+      }
+    }
+}
+.textmain {
+   display: flex;
+  justify-content: center;
+   padding: 150px 50px;
+  div {
+    flex-shrink: 3;
+    flex-grow: 1;
+    flex-basis: 50px;
+    margin: 0px 20px;
+  }
+   h3 {
+     font-size: 2rem;
+   }
+   div {
+     border: 1px solid $orangeColor;
+     padding: 30px;
+   }
+ }
+.mainMandala {
+     position: absolute;
+     display: block;
+     z-index: 2;
+     right: 0px;
+     bottom: 0px;
+     width: 400px;
+   }
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  color: white;
+  font-weight: 100;
+  background: $orangeColor;
+  section {
+    height: 100%;
+    p {
+      margin-bottom: 20px;
+    }
+    }
+  h4 {
+    color: $yellowColor;
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    }
+  span {
+    position: absolute;
+    bottom: 10px;
+    }
+  a {
+    color: #fff;
+    transition: 0.5s;
+    font-size: 2rem;
+    &:hover {
+      color: $yellowColor;
+      cursor: pointer;
+      }
+    }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    a {
+      padding-bottom: 10px;
+      img {
+        width: 30px;
+        }
+      }
+    }
+  }
+.daten {
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
